@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/schedule_bk"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/caipiaotop"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/schedule_title_bg" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="查看日程详情"
+            android:textColor="#ffffffff"
+            android:textSize="24.0dip" />
+    </RelativeLayout>
+
+     <TextView
+            style="@style/ScheduleTextStyle"
+            android:layout_marginTop="15dp"
+            android:text="日程详情(提示：长按日程可删除信息)" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/schedule_input_bg"
+         >
+ 
+        <TextView
+            android:id="@+id/scheduledetailsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@null"
+             android:gravity="top"
+            android:padding="5dp"
+            android:textSize="14.0sp" />
+        
+          </LinearLayout>
+        
+     <TextView
+            style="@style/ScheduleTextStyle"
+            android:layout_marginTop="10dp"
+            android:text="日程类型" />
+    
+              <com.ecology.calenderproj.base.BorderTextView
+            android:id="@+id/scheduledetailsType"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+             android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:drawableRight="@drawable/schedule_type"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold" />
+        
+               <TextView
+            style="@style/ScheduleTextStyle"
+            android:layout_marginTop="10dp"
+            android:text="时间" />
+              
+       <com.ecology.calenderproj.base.BorderTextView
+            android:id="@+id/scheduledetailsDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             android:layout_margin="5dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_menu_alarms"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+               android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        
+        
+  
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/schedule_bk"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/caipiaotop"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/schedule_title_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/wnl_back" />
+
+        <TextView
+            android:id="@+id/todayDate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="2013年11月15日"
+            android:textColor="#ffffffff"
+            android:textSize="24.0dip" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/wnl_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wnl_schedule_detail_bg" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp" >
+
+            <TextView
+                android:id="@+id/dayofweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="星期"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_text_size" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="50dp"
+                android:layout_height="3px"
+                android:layout_below="@+id/dayofweek"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/lunarTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:text="农历"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+<!--     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <com.ecology.calenderproj.base.BorderTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="日程安排"
+            android:textSize="16sp" />
+        
+       
+        
+        
+    </LinearLayout> -->
+    
+     <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="暂无安排"
+           android:background="@drawable/schedule_input_bg">
+           <!--  android:visibility="gone" -->
+            </TextView>
+    
+
+</LinearLayout>

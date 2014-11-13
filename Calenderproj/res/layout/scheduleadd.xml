@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/caipiaotop"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/schedule_title_bg" >
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="50.0dp"
+            android:layout_height="35.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="日  程  安  排"
+            android:textColor="#ffffffff"
+            android:textSize="24.0dip" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="50.0dp"
+            android:layout_height="35.0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/schedule_input_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/scheduleText"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@null"
+            android:hint="请输入你的日程..."
+             android:gravity="top"
+            android:padding="5dp"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/ScheduleTextStyle"
+            android:text="选择日程类型" />
+
+        <com.ecology.calenderproj.base.BorderTextView
+            android:id="@+id/scheduleType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_clock_alarm_selected"
+            android:drawableRight="@drawable/schedule_type"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold" />
+
+        
+         <TextView
+            style="@style/ScheduleTextStyle"
+            android:text="选择时间" />
+        
+     <com.ecology.calenderproj.base.BorderTextView
+            android:id="@+id/scheduleDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_menu_alarms"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+               android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#000000"
+            android:textStyle="bold" /> 
+    </LinearLayout>
+
+</LinearLayout>
